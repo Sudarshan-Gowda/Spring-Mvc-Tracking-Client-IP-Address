@@ -1,6 +1,7 @@
 <html>
 <head>
-<title>ThymeLeaf Dialect</title>
+<title>Tracking Client IP Address</title>
+<link rel="icon" th:href="@{/resources/images/sudarshan-logo.png}" />
 </head>
 <body>
 	<div id="fullpage">
@@ -15,13 +16,12 @@
 		</div>
 		<div th:if="${clientIPAddress == null}" id="no-client">
 			<span id="no-client-id1">No Client is Accessing your
-			Application.</span> <br />
-			<span id="no-client-id2">To check Client Ip Address, Access
-				your Application from Client Machine Side </span>
+				Application.</span> <br /> <span id="no-client-id2">To check Client
+				IP Address, Access your Application from Client Machine Side </span>
 		</div>
 
 		<div th:if="${currentIpAddress != null}" id="current-ip">
-			<span>Admin/current/local Ip Address is : </span> <span
+			<span>Admin/current/local IP Address is : </span> <span
 				id="current-ip1" th:text="${currentIpAddress}"></span>
 		</div>
 
@@ -32,8 +32,5 @@
 		</div>
 
 	</div>
-
-
-
 </body>
 </html>
